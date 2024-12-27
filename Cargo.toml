@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [ "binding-borrow","life-time"]
+
+[profile.release]
+codegen-units = 1
+lto           = true
+panic         = "abort"
+strip         = true
+
+[workspace.dependencies]
