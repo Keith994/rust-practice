@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = [ "binding-borrow","life-time"]
+members = [ "binding-borrow", "cell-example","life-time", "maps", "miscellaneous", "serde-example", "standard-lib", "utf-8"]
 
 [profile.release]
 codegen-units = 1
@@ -9,3 +9,5 @@ panic         = "abort"
 strip         = true
 
 [workspace.dependencies]
+serde = "1.0.217"
+serde_json = "1.0.135"
